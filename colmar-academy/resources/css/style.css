@@ -1,0 +1,820 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Header Section*/
+
+#header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  text-transform: uppercase;
+  height: 32px;
+}
+
+.two {
+  font-weight: bold;
+}
+
+.logo1 {
+  display: none;
+}
+
+.logo1 img {
+  display: none;
+}
+
+.logo2 {
+  display: none;
+}
+
+.logo2 img {
+  display: none;
+}
+
+.logo3 {
+  display: none;
+}
+
+.logo3 img {
+  display: none;
+}
+
+.logo4 {
+  display: none;
+}
+
+.logo4 img {
+  display: none;
+}
+
+.logo img {
+  margin-left: 24px;
+}
+
+.header_links {
+  margin-right: 24px;
+}
+
+.header_links span {
+  margin-left: 16px;
+}
+
+.header_links span a {
+  color: black;
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+}
+
+.header_links span a:hover {
+  background-color: lightgrey;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/*Introductory Section*/
+
+#intro {
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  grid-template-areas:
+  "image text";
+}
+
+.image {
+  grid-area: image;
+  padding: 32px 24px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  color: rgb(66, 64, 64);
+  width: 70%;
+  font-size: 1.5rem;
+  margin-left: 24px;
+}
+
+.text h1 {
+  margin: 32px 0 16px 0;
+}
+
+.lorem {
+  margin: 16px 0 0 0;
+}
+
+.button {
+  margin: 24px 0 32px 0;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  border-radius: 4px;
+  padding: 4px 16px;
+}
+
+.button a:hover {
+  color: black;
+  background-color: white;
+}
+
+/*Section Two - Course Info*/
+
+#course_info {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100%;
+  grid-template-areas:
+  "testimony programme";
+}
+
+.testimony {
+  grid-area: testimony;
+  padding: 32px 24px;
+  font-family: 'roboto', sans-serif;
+}
+
+.testimony img {
+  width: 100%;
+}
+
+.programme {
+  padding: 32px 24px;
+  margin: auto;
+  flex-flow: column;
+  align-items: center;
+  display: flex;
+}
+
+.orientation {
+  display: flex;
+  flex-direction: row;
+  border-left: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+}
+
+.orientation_img {
+  margin: 0 16px 16px 16px;
+}
+
+.orientation_img img {
+  width: 100%;
+}
+
+.orientation_img_mobile {
+  display: none;
+  margin: 0;
+}
+
+.orientation_img_mobile img {
+  display: none;
+}
+
+.programme_txt {
+  margin: 16px;
+  width: 65%;
+  font-family: 'roboto', sans-serif;
+}
+
+.programme_txt p a {
+  text-decoration: none;
+  color: white;
+  background-color: darkgrey;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.programme_txt p a:hover {
+  color: black;
+}
+
+.detail {
+  display: block;
+}
+
+.campus {
+  display: flex;
+  flex-direction: row;
+  border-left: solid 1px lightgrey;
+}
+
+.campus_img {
+  margin: 16px;
+}
+
+.campus_img img {
+  width: 100%;
+}
+
+.campus_img_mobile {
+  display: none;
+}
+
+.lecture {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+}
+
+.lecture_img {
+  margin: 16px;
+}
+
+.lecture_img img {
+  width: 100%;
+}
+
+.lecture_img_mobile {
+  display: none;
+}
+
+/*Section Three - Courses*/
+
+#courses {
+  padding: 0 72px;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas:
+  "courses courses courses"
+  "software_engineering computer_art design"
+  "data business marketing";
+  font-family: 'roboto', sans-serif;
+}
+
+.courses {
+  grid-area: courses;
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+.software_engineering {
+  grid-area: software_engineering;
+}
+
+.computer_art {
+  grid-area: computer_art;
+}
+
+.design {
+  grid-area: design;
+}
+
+.data {
+  grid-area: data;
+}
+
+.business {
+  grid-area: business;
+}
+
+.marketing {
+  grid-area: marketing;
+}
+
+.mobile {
+  display: none;
+}
+
+.img {
+  margin: 0 16px 32px 16px;
+  background-color: white;
+  height: 23rem;
+}
+
+.img img {
+  width: 100%;
+}
+
+.txt {
+  padding-bottom: 24px;
+  margin-left: 16px;
+}
+
+/*Section Four - Thesis Exhibit*/
+
+#thesis_exhibit {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 30% 30% 5% 15%;
+  grid-template-areas:
+  "thesis thesis"
+  "video showcase"
+  "video study"
+  "urban blank";
+  font-family: 'roboto', sans-serif;
+}
+
+.thesis {
+  grid-area: thesis;
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  grid-area: video;
+  margin: 24px;
+}
+
+.video video {
+  width: 100%;
+}
+
+.showcase {
+  grid-area: showcase;
+  display: flex;
+  background-color: lightgrey;
+  margin-top: 24px;
+}
+
+.showcase_img {
+  margin: 16px;
+}
+
+.showcase_img img {
+  width: 100%;
+}
+
+.showcase_txt {
+  margin: 16px;
+  width: 65%;
+}
+
+.study {
+  grid-area: study;
+  display: flex;
+}
+
+.study_img {
+  margin: 16px;
+}
+
+.study_img img {
+  width: 100%;
+}
+
+.study_txt {
+  margin: 16px;
+  width: 65%;
+}
+
+.urban {
+  grid-area: urban;
+  margin-left: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px lightgrey;
+  padding-top: 16px;
+  height: 100px;
+  font-size: 0.75rem;
+  color: grey;
+  font-family: 'roboto', sans-serif;
+}
+
+.copyright {
+  margin-left: 24px;
+}
+
+.terms {
+  margin-right: 24px;
+}
+
+.terms span {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1125px) {
+
+  .text {
+    margin: 0 24px 0 0;
+    width: auto;
+  }
+
+  .programme_txt {
+    margin: 8px;
+  }
+
+  .programme_txt h2 {
+    margin: 5px 0;
+  }
+
+  .programme_txt p {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .programme_txt p a:hover {
+    background-color: white;
+  }
+
+  .programme {
+    margin: 0;
+  }
+
+  .orientation {
+    background-image: url("../images/information-orientation-mobile.jpg");
+    background-size: cover;
+    height: 12rem;
+    color: white;
+    border: 0;
+    width: 100%;
+  }
+
+  .orientation_img {
+    display: none;
+  }
+
+  .programme_txt {
+    width: 100%;
+  }
+
+  .programme_txt p a {
+    color: white;
+  }
+
+  .campus {
+    background-image: url("../images/information-campus-mobile.jpg");
+    background-size: cover;
+    height: 12rem;
+    color: white;
+    border: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .campus_img {
+    display: none;
+  }
+
+  .lecture {
+    background-image: url("../images/information-guest-lecture-mobile.jpg");
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 12rem;
+  }
+
+  .lecture_img {
+    display: none;
+  }
+
+  #courses {
+    padding: 0 72px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 19% 27% 27% 27%;
+    grid-template-areas: "courses courses"
+   "software_engineering computer_art"
+   "design data"
+   "business marketing";
+  }
+
+  #thesis_exhibit {
+    grid-template-columns: 70% 30%;
+  }
+
+  .showcase {
+    background-color: white;
+  }
+
+  .showcase_img {
+    display: none;
+  }
+
+  .showcase_txt {
+    background-image: url("../images/thesis-fisma.jpg");
+    padding: 16px;
+    width: 10rem;
+    margin: 0 16px;
+  }
+
+  .showcase_txt p {
+    display: none;
+  }
+
+  .showcase_txt h4 {
+    background-color: white;
+  }
+
+  .study_img {
+    display: none;
+  }
+
+  .study_txt {
+    background-image: url("../images/thesis-now-and-then.jpg");
+    background-size: cover;
+    padding: 16px;
+    width: 10rem;
+  }
+
+  .study_txt p {
+    display: none;
+  }
+
+  .study_txt h4 {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #intro {
+    display: flex;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+  }
+
+  .text {
+    margin: auto;
+    color: white;
+  }
+
+  .text h1 {
+    font-size: 1em;
+  }
+
+  .lorem {
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  #header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo1 {
+    display: flex;
+  }
+
+  .logo1 img {
+    display: flex;
+  }
+
+  .logo2 {
+    display: flex;
+  }
+
+  .logo2 img {
+    display: flex;
+  }
+
+  .logo3 {
+    display: flex;
+  }
+
+  .logo3 img {
+    display: flex;
+  }
+
+  .logo4 {
+    display: flex;
+  }
+
+  .logo4 img {
+    display: flex;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+  .one {
+    display: none;
+  }
+
+  .two {
+    display: none;
+  }
+
+  .text {
+    margin: auto;
+    width: 50%;
+  }
+
+  .text h1 {
+    display: none;
+  }
+
+  .button {
+    width: 70%;
+    font-size: 1em;
+    margin: 5rem auto;
+  }
+
+  #course_info {
+    display: flex;
+  }
+
+  .programme {
+    padding: 0;
+    display: inline;
+  }
+
+  .testimony {
+    display: none;
+  }
+
+  .orientation {
+    flex-direction: column;
+    margin: 16px;
+    border: 0;
+    width: auto;
+  }
+
+  orientation_img {
+    display: none;
+  }
+
+  orientation_img_mobile {
+    display: inline;
+  }
+
+  orientation_img_mobile img {
+    display: flex;
+    width: 100%;
+  }
+
+  .campus {
+    flex-direction: column;
+    margin: 16px;
+    border: 0;
+    width: auto;
+  }
+
+  campus_img {
+    display: none;
+  }
+
+  campus_img_mobile {
+    display: inline;
+  }
+
+  campus_img_mobile img {
+    display: flex;
+    width: 100%;
+  }
+
+  .lecture {
+    flex-direction: column;
+    margin: 16px;
+    border: 0;
+    background-color: white;
+    width: auto;
+  }
+
+  lecture_img {
+    display: none;
+  }
+
+  lecture_img_mobile {
+    display: inline;
+  }
+
+  lecture_img_mobile img {
+    display: flex;
+    width: 100%;
+  }
+
+  .programme_txt {
+    width: auto;
+    margin: 0 16px;
+  }
+
+  #courses {
+    border-top: solid 1px lightgrey;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    border-bottom: solid 1px lightgrey;
+  }
+
+  .courses h2 {
+    margin: 0;
+  }
+
+  .software_engineering {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .computer_art {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .design {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .data {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .business {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 8px;
+  }
+
+  .marketing {
+    padding: 16px;
+    background-color: lightgrey;
+    margin-bottom: 32px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    margin: 0;
+  }
+
+  #thesis_exhibit {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 24px;
+  }
+
+  .video {
+    margin: 0;
+  }
+
+  .showcase {
+    display: none;
+  }
+
+  .study {
+    display: none;
+  }
+
+  .urban {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+    border-top: none;
+    padding: 16px 0;
+  }
+
+  .terms {
+    display: none;
+  }
+}
+
+@media screen only and (max-width: 480px) {
+  #intro {
+    background-size: contain;
+  }
+}
